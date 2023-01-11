@@ -1,11 +1,11 @@
-var hamburger = document.getElementById('mobileMenu');
-var closeMobileMenu = document.getElementById('closeMobileMenu');
-var mobileMenuDiv = document.getElementById('mobileMenuDiv');
-var modal = document.getElementById('modal');
+const hamburger = document.getElementById('mobileMenu');
+const closeMobileMenu = document.getElementById('closeMobileMenu');
+const mobileMenuDiv = document.getElementById('mobileMenuDiv');
+const modal = document.getElementById('modal');
 
-var subMenus = document.querySelectorAll('.subMenu');
-var menuIcons = document.querySelectorAll('.menuIcon');
-var menus = document.querySelectorAll('.menu');
+const subMenus = document.querySelectorAll('.subMenu');
+const menuIcons = document.querySelectorAll('.menuIcon');
+const menus = document.querySelectorAll('.menu');
 
 hamburger.addEventListener('click', hamburgerClick);
 closeMobileMenu.addEventListener('click', closeMobileMenuClick);
