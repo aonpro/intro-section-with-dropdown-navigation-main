@@ -15,12 +15,11 @@ menus.forEach((menu) => menu.addEventListener('focusout', onMenuFocusout));
 window.onresize = clearMenu;
 function clearMenu() {
   if (!modal.classList.contains('hidden')) {
-    setTimeout(() => {
-      showHideMenu();
-      subMenus.forEach((e) => e.classList.add('hidden'));
-      menuIcons.forEach((e) => e.classList.remove('menuIconRotate'));
-    }, 5);
+    showHideMenu();
   }
+
+  subMenus.forEach((e) => e.classList.add('hidden'));
+  menuIcons.forEach((e) => e.classList.remove('menuIconRotate'));
 }
 
 function hamburgerClick() {
